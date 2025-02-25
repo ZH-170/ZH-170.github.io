@@ -1,0 +1,247 @@
+.bars {
+	width: 95%;
+	float: left;
+	padding: 0;
+	text-align: left;
+}
+
+.bars .skills {
+  	margin-top: 36px;
+   list-style: none;
+}
+
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #333;
+  	height: 42px;
+  	border-radius: 0px;
+}
+
+.bars li em {
+	font: 15px 'opensans-bold', sans-serif;
+   font-size: 20px;
+   color: #313131;
+	text-transform: uppercase;
+   letter-spacing: 2px;
+	font-weight: normal;
+   position: relative;
+	top: -36px;
+}
+
+.bar-expand {
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   margin: 0;
+   padding-right: 24px;
+  	background: #313131;
+   display: inline-block;
+  	height: 42px;
+   line-height: 42px;
+   border-radius: 0px;
+}
+
+.programmingLanguageIcons {
+	width: 100px;
+	height: 100px;
+}
+
+.skills-container{
+	/* background: gray; */
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	
+	justify-content: center;
+	height: 600px;
+	position: relative;
+}
+
+.skill-coding-popup-container {
+	/* opacity: 0; */
+	position: absolute;
+	background: lightgray;
+	
+	width: 80%;
+	max-height: 100%;
+	/* z-index: 2; */
+	z-index: 2;
+	border-radius: 2em;
+	padding: 0px 10px 30px 10px;
+}
+
+.skill-popup-header{
+    padding: 10px 15px 0px 15px;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    opacity: 1;
+}
+
+.skill-coding-popup-container .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #2e3944;
+}
+
+.skill-coding-popup-container .close-button:hover {
+    color: black;
+}
+
+
+/* .skill-coding:hover .skill-coding-popup-container{
+	z-index: 2;
+
+} */
+
+.skill-coding-popup .skill-text{
+	background: green;
+	border-radius: 2em;
+	height: 95%;
+}
+
+.skill-coding-popup .skill-type {
+	background: lightblue;
+	opacity: 0;
+}
+
+.skill-column {
+	/* padding: 10px; */
+	
+	/* background: white; */
+	border: 2px solid #d3d9d4;
+	margin: 10px;
+	height: 90%;
+	border-radius: 2em;
+	transition: .35s ease-in-out;
+	position: relative;
+	z-index: 1;
+	box-shadow: 1px 1px 10px #d3d9d4;
+}
+
+.skill-column h1{
+	text-align: center;
+	font-size: 38px;
+	margin-top: 10px;
+	/* background: blue; */
+	color: #d3d9d4;
+}
+
+.skill-music, .skill-drawing {
+	flex: 1;
+}
+
+.skill-music:hover, .skill-drawing:hover {
+	flex: 2;
+	background: #748d92;
+}
+
+.skill-coding {
+	flex: 2;
+}
+
+.skill-coding:hover {
+	flex: 3;
+	background: #748d92;
+}
+
+.skill-text{
+	margin: 20px;
+	background: red;
+}
+
+.skill-text {
+	margin-top: 0px;
+	font-size: 19px;
+}
+
+.skill-text-title{ 
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 25px;
+	background: green;
+}
+
+.skill-type img{
+	margin-left: 10px;
+}
+
+.skill-text-container {
+	max-height: 100%;
+}
+
+.skill-popup-header{
+	margin-bottom: 0px;
+	background: gray;
+	height: 80px;
+	font-size: 50px;
+	padding-top: 10px;
+}
+
+.skill-img {
+	
+	margin: 10px;
+	width: 97%;
+	height: 100%;
+	padding: 0px;
+	position: absolute;
+	/* background: rgb(173, 255, 47, 0.3); */
+	display: flex;
+	justify-content: center;
+	align-items: top;
+}
+
+.skill-img img{
+	
+	width: 400px;
+	/* height: 100%; */
+	height: 400px;
+}
+
+.skill-img2 {
+	
+	margin: 10px;
+	width: 97%;
+	height: 100%;
+	padding: 0px;
+	position: absolute;
+	/* background: rgb(173, 255, 47, 0.3); */
+	display: flex;
+	justify-content: center;
+	align-items: top;
+}
+
+.skill-img2 img{
+	
+	width: 90%;
+	/* height: 100%; */
+	height: 60%;
+	max-width: 300px;
+	max-height: 400px;
+}
+
+.skill-coding:hover .skill-text{
+	opacity: 1;
+}
+
+
+#overlay {
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: all;
+}
