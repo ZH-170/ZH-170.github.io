@@ -1,0 +1,317 @@
+.polaroid {
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+
+.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+.all-polaroid {
+    display: flex;              /* Enable Flexbox */
+    justify-content: space-between; /* Space blocks evenly (optional) */
+    gap: 20px;                  /* Space between blocks */
+}
+
+.Experience-container {
+    /* background-color: white; */
+    width: 80%;
+    height: 300px;
+    padding: 1em;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    padding: 10px;
+    gap: 1em;
+}
+
+.row1-col-left, .row2-col-right{
+    flex: 2;
+    /* border: 2px solid red; */
+    border-radius: 2em;
+    box-shadow: 3px 4px 10px 0 rgba(211, 217, 212, 0.5), -5px -4px 10px 0 rgba(211, 217, 212, 0.5);
+}
+
+.row1-col-left:hover, .row2-col-right:hover{
+    /* border: 2px solid red; */
+    border-radius: 2em;
+    box-shadow: 3px 4px 100px 0 rgba(211, 217, 212, 0.5), -5px -4px 100px 0 rgba(211, 217, 212, 0.5);
+    opacity: 70%;
+}
+
+.row1-col-right , .row2-col-left{
+    flex: 1;
+    /* border: 2px solid red; */
+    border-radius: 2em;
+    box-shadow: 3px 4px 10px 0 rgba(255, 255, 255, 0.5), -5px -4px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.row1-col-right:hover, .row2-col-left:hover{
+    flex: 1;
+    /* border: 2px solid red; */
+    border-radius: 2em;
+    box-shadow: 3px 4px 100px 0 rgba(255, 255, 255, 0.5), -5px -4px 100px 0 rgba(255, 255, 255, 0.5);
+    opacity: 70%;
+}
+
+.row1-col-left img, .row2-col-left img, .row1-col-right img, .row2-col-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2em;
+    
+}
+
+.big-container {
+    position: relative;
+}
+
+.Experience-popup .popup1 {
+    position: absolute;
+    background-color: rgba(116, 141, 146, 0.7);
+    border: 1px solid #d3d9d4;
+    width: 950px;
+    /* height: 100px; */
+    
+    left: 15%;
+    top: 0;
+    transform: translate(-50%, -50) scale(0.8);
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+    z-index: 10;
+    border-radius: 25px;
+    overflow-y: scroll;
+    max-height: 500px;
+    margin: 30px;
+
+    /* text-align: center; */
+    padding: 30px;
+}
+
+.Experience-popup .popup1::-webkit-scrollbar {
+    width: 8px;
+    height: 30000000000000000px;
+    /* background: black; */
+
+    display: block;
+    overflow: scroll;
+    /* height: 20000em; */
+    padding: 1em;
+    margin: 1em auto;
+  /* outline: 2px dashed cornflowerblue; */
+    
+}
+.Experience-popup .popup1::-webkit-scrollbar-track {
+    /* background: white; */
+    margin: 40px;
+    height: 2000000000px;
+    
+}
+
+.Experience-popup .popup1::-webkit-scrollbar-thumb {
+    /* background: #2e3944; */
+    background: rgba(46, 57, 68, 0.5);
+    border-radius: 2em;
+    height: 10px;
+    /* 2e3944  748d92*/
+    /* 46 57 68 */
+}
+
+.Experience-popup .popup1::-webkit-scrollbar-thumb:hover {
+    background: rgba(46, 57, 68, 1);
+
+    opacity: 1;
+}
+
+
+.Experience-popup .popup1 .open {
+    opacity: 1;
+    transform: scale(1);
+    
+}
+.Experience-popup .popup1.active {
+    opacity: 1;
+    transform: translate(-50%, -50);
+}
+
+.popup-header{
+    padding: 10px 15px 0px 15px;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    opacity: 1;
+}
+
+.popup-header .popup-title {
+    font-size: 50px;
+    font-weight: 800;
+    color: #d3d9d4;
+}
+
+.popup-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #2e3944;
+}
+
+.popup-header .close-button:hover {
+    color: black;
+}
+
+.popup-body {
+    /* background: white; */
+    padding: 0px 15px 2px 15px;
+    color: #d3d9d4;
+    font-size: 20px;
+    /* height: 1000px; */
+}
+
+#overlay {
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: all;
+}
+
+.inset-shadow {
+
+    border-radius: 25px;
+    box-shadow: inset 50px 50px 200px #2e3944, inset -50px -50px 200px #2e3944;
+    /* box-shadow: inset 100px 100px 200px #212a31, inset -100px -100px 200px #212a31; */
+
+
+}
+
+.label1-container {
+    width: 52.5%;
+    height: 47%;
+    position: absolute;
+}
+
+.label1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3d9d4;
+}
+
+.label1:hover {
+    opacity: 1;
+}
+
+.label2-container {
+    width: 26.5%;
+    height: 47%;
+    position: absolute;
+}
+
+.label2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3d9d4;
+}
+
+.label2:hover {
+    opacity: 1;
+}
+
+.label3-container {
+    width: 26.5%;
+    height: 47%;
+    position: absolute;
+}
+
+.label3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3d9d4;
+}
+
+.label3:hover {
+    opacity: 1;
+}
+
+.label4-container {
+    width: 52.5%;
+    height: 47%;
+    position: absolute;
+}
+
+.label4 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3d9d4;
+}
+
+.label4:hover {
+    opacity: 1;
+}
+
+.popup-img{
+    width: 20%;
+    padding: 5px;
+}
+
+.popup-more-info {
+    background: none;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2em;
+    margin: 10px;
+
+    color: #212a31;
+    font-weight: 500px;
+    border: 2px solid #212a31;
+    
+}
+
+.popup-more-info:hover {
+    background-color: #212a31;
+    color: #d3d9d4;
+}
+/* .row2-col-left:hover, .row1-col-left:hover, .row2-col-right:hover */
+/* 
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+} */
