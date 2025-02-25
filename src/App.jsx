@@ -46,13 +46,11 @@ export default function App() {
 
     return (
         <>
+            <h1>byebye</h1>
 
-
-            <div className="app-container">
+            {/* <div className="app-container">
 
                 <div className="NavBar" onClick={handleNavBar}>
-                    {/* <FontAwesomeIcon icon={faBars} style={{color: "#74C0FC",}} /> */}
-                    {/* <img className="fa-solid fa-bars" /> */}
                     <img className="NavBar-icon" src={MenuIcon} />
                 </div>
 
@@ -91,7 +89,7 @@ export default function App() {
                 
                 <div className="Achievements app">
                     <h3>Achievements/Awards: </h3>
-                    {/* <Achievements /> */}
+                    <Achievements />
                 </div>
 
                 <div>
@@ -110,7 +108,7 @@ export default function App() {
                 <Fade>
                     <h3>heheboi</h3>
                 </Fade>
-            </div>
+            </div> */}
         </>
     );
 }
