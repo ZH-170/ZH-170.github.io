@@ -15,19 +15,131 @@ body {
     font-family: 'Rasa';
 }
 
+/* ---------------------------------- Navigation Bar ------------------------------------- */
 
-nav {
+.NavBar {
+    /* background-color: blue; */
+    width: 3.5%;
+    height: 70px;
+
     position: fixed;
+    top: 0;
+    right: 3%;
+
+    z-index: 101;
+    margin: 20px;
+    border-radius: 2em;
+    box-shadow: 1px 1px 10px rgba(211, 217, 212, 0.5);
+
+    
     display: flex;
-    background: #73AD21;
-    border-radius: 25px;
-    padding: 20px;
-    width: 200px;
-    height: 20px;
-    float: none;
-    position: absolute;
-    /* left: 50%; */
+    align-items: center;
+    justify-content: center;
+
+    animation: float 3s ease-in-out infinite, glow 1.5s ease-in-out infinite;
+
 }
+
+.navigation-bar {
+    /* background-color: white; */
+    background-color: rgba(33, 42, 49, 0.8);
+    width: 40%;
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+    right: 3%;
+
+    padding-right: 60px;
+    margin: 20px;
+    border-radius: 2em;
+    box-shadow: 1px 1px 10px rgba(211, 217, 212, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: float 8s ease-in-out infinite, glow 10s ease-in-out infinite;
+    z-index: 100;
+}
+
+.nav-btn {
+    flex: 1;
+    /* background: white; */
+    /* color: #d3d9d4; */
+    height: 65%;
+    margin: 5px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 2em;
+    color: #748d92;
+    border: 2px solid #748d92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    /* box-shadow: 1px 1px 10px rgba(211, 217, 212, 0.5); */
+}
+
+.nav-btn:hover {
+    /* color: #212a31;
+    background-color: #748d92; */
+
+    color: #d3d9d4;
+    background-color: #2e3944;
+}
+
+.navbar-fade-out {
+    animation: fadeOut 2s forwards;
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.NavBar-icon {
+    width: 50%;
+    height: 50%;
+}
+
+.NavBar:hover {
+    background-color: rgba(211, 217, 212, 0.3);
+
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(-4px);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(-4px);
+    }
+}
+
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #d3d9d4;
+    }
+    50% {
+      box-shadow: 0 0 20px #d3d9d4, 0 0 30px rgba(211, 217, 212, 0.5);
+
+    }
+    100% {
+      box-shadow: 0 0 10px #d3d9d4;
+    }
+  }
+
+
+/* ---------------------------------- Home Page ------------------------------------- */
 
 .svg1 path {
     stroke: #D3D9D4;
@@ -96,6 +208,22 @@ nav {
     color: #748D92;
 }
 
+.homePageName h1{
+    font-size: 130px; 
+    text-align: center;
+}
+
+.homePageName h2{
+    width: 400px; 
+    font-size: 50px; 
+    text-align: center;
+}
+
+.homePageName h4{
+    font-size: 20px; 
+    text-align: center;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0; /* Start invisible */
@@ -104,3 +232,9 @@ nav {
         opacity: 1; /* Fully visible */
     }
 }
+
+
+
+
+
+/* ---------------------------------- Home Page ------------------------------------- */

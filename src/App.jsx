@@ -46,9 +46,8 @@ export default function App() {
 
     return (
         <>
-            <h1>byebye</h1>
 
-            {/* <div className="app-container">
+            <div className="app-container">
 
                 <div className="NavBar" onClick={handleNavBar}>
                     <img className="NavBar-icon" src={MenuIcon} />
@@ -108,7 +107,7 @@ export default function App() {
                 <Fade>
                     <h3>heheboi</h3>
                 </Fade>
-            </div> */}
+            </div>
         </>
     );
 }
